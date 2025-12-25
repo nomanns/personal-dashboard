@@ -1,12 +1,20 @@
 import { Routes, Route } from 'react-router-dom';
-import { Typography } from 'antd';
+import { Typography, Button } from 'antd';
 
 const { Title } = Typography;
 
 const App: React.FC = () => {
   return (
     <Routes>
-      <Route path='/' element={<Title level={3}>Home Route Works</Title>} />
+      <Route
+        path='/'
+        element={
+          <div>
+            <Title level={3}>Home Route</Title>
+            <Button type='primary'>Ant Design Works</Button>
+          </div>
+        }
+      />
     </Routes>
   );
 };
